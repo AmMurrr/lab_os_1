@@ -1,0 +1,23 @@
+/home/virtbox/OS_labs/lab_os_1/tests
+
+virtbox@virtbox-VirtualBox:~/OS_labs/lab_os_1/build$ ./main
+/home/virtbox/OS_labs/lab_os_1/tests/test_1.txt
+1
+virtbox@virtbox-VirtualBox:~/OS_labs/lab_os_1/build$ ./main
+/home/virtbox/OS_labs/lab_os_1/tests/test_2.txt
+2.5
+virtbox@virtbox-VirtualBox:~/OS_labs/lab_os_1/build$ ./main
+/home/virtbox/OS_labs/lab_os_1/tests/test_3.txt
+Division by 0 
+virtbox@virtbox-VirtualBox:~/OS_labs/lab_os_1/build$ ./main
+/home/virtbox/OS_labs/lab_os_1/tests/test_4.txt
+0.0108269397169
+virtbox@virtbox-VirtualBox:~/OS_labs/lab_os_1/build$ ./main
+/home/virtbox/OS_labs/lab_os_1/tests/test_5.txt
+0
+virtbox@virtbox-VirtualBox:~/OS_labs/lab_os_1/build$ ./main
+/home/virtbox/OS_labs/lab_os_1/tests/test_6.txt
+0
+virtbox@virtbox-VirtualBox:~/OS_labs/lab_os_1/build$ ./main
+/home/virtbox/OS_labs/lab_os_1/tests/test_42.txt
+The file was not open
