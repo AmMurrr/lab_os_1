@@ -59,7 +59,7 @@ int main(int argc, char *argv[]){
         write(fd1[1], numbers, 128 );
         close(fd1[1]);
 
-        waitpid(pid, NULL, WUNTRACED);
+        waitpid(pid, NULL, -1);
 
         char answer[128] = " ";
         close(fd2[1]);
