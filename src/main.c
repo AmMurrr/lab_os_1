@@ -7,11 +7,9 @@
 #include <sys/wait.h>
 
 
-
 int new_proccess() {
     pid_t pid = fork();
     return pid;
-
 }
 
 
@@ -40,7 +38,6 @@ int main(int argc, char *argv[]){
         execvp("./child", argv);
     }
     else {
-       
         char file_name[128];
         read(STDIN_FILENO,file_name, 128);
         int pos = strlen(file_name) - 1;
@@ -58,8 +55,6 @@ int main(int argc, char *argv[]){
             exit(2);
         }
         
-
-        
         close(fd1[0]);
         write(fd1[1], numbers, 128 );
         close(fd1[1]);
@@ -71,19 +66,10 @@ int main(int argc, char *argv[]){
         read(fd2[0], answer, 128);
 
         write(STDOUT_FILENO, answer, 128);
-        write(STDOUT_FILENO, "\n", 2);
+        write(STDOUT_FILENO, "\n", 1);
 
         close(fd2[0]);
     }
         
-            
-        
-            
-            
-
-
-
-
-
     return 0;
 }
