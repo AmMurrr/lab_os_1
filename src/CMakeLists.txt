@@ -6,5 +6,4 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 
 
 add_executable(child child.c)
-set(REQUIRED_FILES child)
 add_executable(main main.c)
