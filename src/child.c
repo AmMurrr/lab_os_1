@@ -34,7 +34,11 @@ int main() {
     char child_numbers[128];
     float answer;
     read(STDIN_FILENO,child_numbers, 128);
-
+    int pos = strlen(child_numbers) - 1;
+    if ( child_numbers[pos] == '\n') {
+        child_numbers[pos]= '\0';
+    }
+    
     answer = solving_func(child_numbers);
 
     char answer_char[128] = " ";
